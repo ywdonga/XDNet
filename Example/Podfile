@@ -1,0 +1,16 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/ywdonga/XDKitSpecs.git'
+
+use_frameworks!
+
+platform :ios, '12.0'
+
+target 'XDNet_Example' do
+  pod 'XDNet', :path => '../'
+
+  target 'XDNet_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
